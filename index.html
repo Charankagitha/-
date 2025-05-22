@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CharanKagitha</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Navbar with Icons -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-code me-2"></i>Charan Kagitha
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home"><i class="fas fa-home me-1"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about"><i class="fas fa-user me-1"></i> About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills"><i class="fas fa-cogs me-1"></i> Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio"><i class="fas fa-briefcase me-1"></i> Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact"><i class="fas fa-envelope me-1"></i> Contact</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <button id="themeToggle" class="btn btn-link nav-link">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="animated-text">Hi, I'm Charan</h1>
+                <p class="subtitle">A passionate web developer creating beautiful and functional websites that deliver results.</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary btn-lg pulse">Get In Touch</a>
+                    <a href="#portfolio" class="btn btn-outline-light btn-lg ml-3">View Work</a>
+                </div>
+            </div>
+            <div class="scroll-down" data-aos="fade-up" data-aos-delay="500">
+                <span>Scroll Down</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+        <div class="hero-particles" id="particles-js"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">About Me</h2>
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="about-card">
+                        <div class="icon-box">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3>Who am I?</h3>
+                        <p>I'm a professional web developer with over 1 year of experience in creating modern, responsive websites and web applications. I specialize in front-end development but also have strong back-end skills.</p>
+                        <p>My approach combines technical expertise with creative problem-solving to deliver solutions that not only look great but also perform exceptionally well.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+                    <div class="about-card">
+                        <div class="icon-box">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>My Approach</h3>
+                        <p>I believe in clean, efficient code and user-centered design. Every project starts with understanding the client's needs and ends with a product that exceeds expectations.</p>
+                        <p>I stay up-to-date with the latest technologies and trends to ensure my clients get the best possible solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">My Skills</h2>
+            <div class="row">
+                <div class="col-md-6" data-aos="fade-right">
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span><i class="fab fa-html5"></i> HTML/CSS</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span><i class="fab fa-js"></i> JavaScript</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span><i class="fab fa-wordpress"></i> WordPress</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span><i class="fas fa-database"></i> SQL</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span><i class="fas fa-paint-brush"></i> UI/UX Design</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span><i class="fab fa-python"></i> Python</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="skills-bg"></div>
+    </section>
+
+    <!-- Portfolio Section with Carousel -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">My Portfolio</h2>
+            <div id="portfolioCarousel" class="carousel slide portfolio-carousel" data-bs-ride="carousel" data-aos="zoom-in">
+                <div class="carousel-inner">
+                    <!-- Slide 1 with 3 items -->
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-md-4">
+                                <div class="portfolio-item">
+                                    <div class="portfolio-img">
+                                        <img src="https://i.ibb.co/Z6SzJ1bV/fb8996ce4426.jpg" alt="Project 1">
+                                        <div class="portfolio-overlay">
+                                            <a href="https://alphine-winery.netlify.app/" class="portfolio-link" target="_blank">
+                                                <i class="fas fa-external-link-alt"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-content">
+                                        <h3>Winery website</h3>
+                                        <p>A fully responsive Landing page for a winery , a brief Explantion about them with their Products .</p>
+                                        <a href="https://alphine-winery.netlify.app/" class="btn btn-sm btn-primary" target="_blank">View Project</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="portfolio-item">
+                                    <div class="portfolio-img">
+                                        <img src="https://i.ibb.co/DPmYBzZX/9d973b88d33e.jpg" alt="Project 2">
+                                        <div class="portfolio-overlay">
+                                            <a href="https://gajanana-electronics.netlify.app/" class="portfolio-link" target="_blank">
+                                                <i class="fas fa-external-link-alt"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-content">
+                                        <h3>Business Dashboard</h3>
+                                        <p>An interactive analytics dashboard with real-time data visualization and reporting tools.</p>
+                                        <a href="https://gajanana-electronics.netlify.app/" class="btn btn-sm btn-primary" target="_blank">View Project</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="portfolio-item">
+                                    <div class="portfolio-img">
+                                        <img src="https://i.ibb.co/Z67pgGQC/63bf5a3fef2f.jpg" alt="Project 3">
+                                        <div class="portfolio-overlay">
+                                            <a href="https://technology-welfare.github.io/.com/" class="portfolio-link" target="_blank">
+                                                <i class="fas fa-external-link-alt"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-content">
+                                        <h3>Charity Website</h3>
+                                        <p>A sleek Web application with intuitive navigation and modern design elements for a charity called welfare-foundation.</p>
+                                        <a href="https://technology-welfare.github.io/.com/" class="btn btn-sm btn-primary" target="_blank">View Project</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 2 with 3 items -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-md-4">
+                                <div class="portfolio-item">
+                                    <div class="portfolio-img">
+                                        <img src="https://i.ibb.co/390brKkr/4381191dca35.jpg" alt="Project 4">
+                                        <div class="portfolio-overlay">
+                                            <a href="https://hangout-restuarent.netlify.app/" class="portfolio-link" target="_blank">
+                                                <i class="fas fa-external-link-alt"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-content">
+                                        <h3>Restaurant Website</h3>
+                                        <p>An online presence for a restaurant with menu, reservation system, and gallery.</p>
+                                        <a href="https://hangout-restuarent.netlify.app/" class="btn btn-sm btn-primary" target="_blank">View Project</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="portfolio-item">
+                                    <div class="portfolio-img">
+                                        <img src="#" alt="Project 5">
+                                        <div class="portfolio-overlay">
+                                            <a href="#" class="portfolio-link" target="_blank">
+                                                <i class="fas fa-external-link-alt"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-content">
+                                        <h3>E-commerce Platform</h3>
+                                        <p>Coming Soon....</p>
+                                        <a href="#" class="btn btn-sm btn-primary" target="_blank">View Project</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="portfolio-item">
+                                    <div class="portfolio-img">
+                                        <img src="#" alt="Project 6">
+                                        <div class="portfolio-overlay">
+                                            <a href="#" class="portfolio-link" target="_blank">
+                                                <i class="fas fa-external-link-alt"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-content">
+                                        <h3>Portfolio Website</h3>
+                                        <p>Coming Soon....</p>
+                                        <a href="#" class="btn btn-sm btn-primary" target="_blank">View Project</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <form id="contactForm" class="contact-form">
+                        <div class="mb-3">
+                           <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                         </div>
+                         <div class="mb-3">
+                            <input type="text" class="form-control" id="subject" placeholder="Subject">
+                         </div>
+                         <div class="mb-3">
+                           <textarea class="form-control" id="message" placeholder="Your Message" required></textarea>
+                         </div>
+                         <button type="submit" class="btn btn-primary pulse">Send Message</button>
+                    </form>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> 522647, Vinukonda , Palnadu , (A.P)</p>
+                        <p><i class="fas fa-phone me-2"></i>+91 9581509255</p>
+                        <p><i class="fas fa-envelope me-2"></i> kagithacharan3@gnail.com</p>
+                        <div class="social-links mt-4">
+                            <a href="https://x.com/Charankagitha07?t=I_3Jr48zrSVC6yB2WoIdBw&s=09" class="me-3 social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/charankagitha7?igsh=MXg1bzZnZjA0dGc2cQ==" class="me-3 social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/charan-kagitha-90758424a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="me-3 social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/Charankagitha" class="me-3 social-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-icons">
+                 <a href="https://x.com/Charankagitha07?t=I_3Jr48zrSVC6yB2WoIdBw&s=09" class="me-3 social-icon"><i class="fab fa-twitter"></i></a>
+                 <a href="https://www.instagram.com/charankagitha7?igsh=MXg1bzZnZjA0dGc2cQ==" class="me-3 social-icon"><i class="fab fa-instagram"></i></a>
+                 <a href="https://www.linkedin.com/in/charan-kagitha-90758424a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="me-3 social-icon"><i class="fab fa-linkedin-in"></i></a>
+                 <a href="https://github.com/Charankagitha" class="me-3 social-icon"><i class="fab fa-github"></i></a>
+            </div>
+            <p>&copy; 2023 Charan Kagitha@21. All Rights Reserved.</p>
+            <div class="back-to-top">
+                <a href="#home" class="back-top-btn"><i class="fas fa-arrow-up"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Particles.js Library -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- Custom JS -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+
+    <script src="3d-cube.js"></script> <!-- New file -->
+
+    <script src="https://cdn.jsdelivr.net/npm/annyang@2.6.1/dist/annyang.min.js"></script>
+
+    <script src="main.js"></script>
+</body>
+</html>
