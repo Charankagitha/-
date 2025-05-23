@@ -467,6 +467,7 @@ body {
     resize: none;
 }
 
+/* Updated Contact Info Styles */
 .contact-info {
     color: var(--text-color);
     padding: 30px;
@@ -474,23 +475,31 @@ body {
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
 }
 
 .contact-info p {
     margin-bottom: 20px;
     display: flex;
     align-items: center;
+    word-break: break-word; /* Prevent long text from overflowing */
 }
 
 .contact-info i {
     margin-right: 15px;
     color: var(--primary-color);
     font-size: 1.2rem;
+    min-width: 20px; /* Ensure consistent icon spacing */
 }
 
 .social-links {
     display: flex;
     gap: 15px;
+    flex-wrap: wrap; /* Allow icons to wrap on small screens */
+    justify-content: center; /* Center icons horizontally */
+    margin-top: 20px;
 }
 
 .social-icon {
@@ -504,6 +513,7 @@ body {
     justify-content: center;
     transition: all 0.3s ease;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0; /* Prevent icons from shrinking */
 }
 
 .social-icon:hover {
@@ -927,5 +937,52 @@ a{
     
     .contact-info {
         margin-top: 30px;
+    }
+}
+
+/* Fix for contact form on mobile */
+@media (max-width: 767px) {
+    .contact-form {
+        margin-bottom: 30px;
+    }
+    
+    .contact-info {
+        padding: 20px;
+    }
+    
+    .contact-info p {
+        font-size: 0.9rem;
+    }
+    
+    /* Adjust social icons spacing */
+    .social-links {
+        gap: 10px;
+    }
+    
+    .social-icon {
+        width: 36px;
+        height: 36px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Fix for very small screens */
+@media (max-width: 400px) {
+    .navbar-brand {
+        font-size: 1rem;
+    }
+    
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .contact-info p {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .contact-info i {
+        margin-right: 0;
+        margin-bottom: 5px;
     }
 }
