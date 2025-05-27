@@ -1038,20 +1038,121 @@ a {
   }
 }
 
+/* ============================================= */
+/* Mobile Responsive Styles (up to 576px)        */
+/* ============================================= */
+
 @media (max-width: 576px) {
+  /* Base Adjustments */
+  body {
+    font-size: var(--font-size-sm);
+    line-height: 1.5;
+  }
+  
+  .container {
+    padding: 0 var(--space-sm);
+  }
+  
+  .section {
+    padding: var(--space-xl) 0;
+  }
+  
+  /* Typography */
+  h1 {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--space-sm);
+  }
+  
+  h2, .section-title {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--space-lg);
+  }
+  
+  h3 {
+    font-size: var(--font-size-lg);
+  }
+  
+  /* Navbar */
+  .navbar {
+    padding: var(--space-sm) 0;
+  }
+  
   .navbar-brand {
     font-size: var(--font-size-md);
   }
   
-  .hero h1 {
+  .navbar-toggler {
     font-size: var(--font-size-md);
   }
   
-  .section-title {
-    font-size: var(--font-size-lg);
+  .navbar-collapse {
+    top: 60px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    min-height: 80vh;
+    padding: var(--space-xl) 0;
+  }
+  
+  .hero h1 {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--space-sm);
+  }
+  
+  .hero .subtitle {
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--space-md);
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+  
+  .btn {
+    width: 100%;
+    padding: var(--space-sm) var(--space-md);
+  }
+  
+  /* About Section */
+  .about-card {
+    padding: var(--space-md);
+    margin-bottom: var(--space-md);
+  }
+  
+  .icon-box {
+    width: 50px;
+    height: 50px;
+    font-size: var(--font-size-md);
+  }
+  
+  /* Skills Section */
+  .skill-item {
+    margin-bottom: var(--space-md);
+  }
+  
+  /* Portfolio Section */
+  .portfolio-img {
+    height: 180px;
+  }
+  
+  .portfolio-content {
+    padding: var(--space-md);
+  }
+  
+  /* Contact Section */
+  .contact-form .form-control {
+    height: 45px;
+    padding: var(--space-sm);
+  }
+  
+  .contact-form textarea.form-control {
+    height: 120px;
   }
   
   .contact-info {
+    padding: var(--space-md);
     margin-top: var(--space-lg);
   }
   
@@ -1063,5 +1164,67 @@ a {
   .contact-info i {
     margin-right: 0;
     margin-bottom: var(--space-xs);
+  }
+  
+  /* Footer */
+  .footer {
+    padding: var(--space-xl) 0 var(--space-md);
+  }
+  
+  .back-to-top {
+    right: var(--space-md);
+    top: -20px;
+  }
+  
+  .back-top-btn {
+    width: 40px;
+    height: 40px;
+    font-size: var(--font-size-sm);
+  }
+  
+  /* Disable complex animations on mobile */
+  .card-3d,
+  .btn-3d,
+  .float-3d,
+  .tilt-3d,
+  .skill-3d,
+  .portfolio-3d,
+  .social-3d {
+    transform: none !important;
+    animation: none !important;
+  }
+  
+  .card-3d:hover,
+  .btn-3d:hover,
+  .portfolio-3d:hover {
+    transform: translateY(-5px) !important;
+  }
+  
+  /* Custom cursor - disable on mobile */
+  .cursor {
+    display: none;
+  }
+  
+  /* Optimize text effects */
+  [data-theme="dark"] .hero h1,
+  [data-theme="dark"] .hero p,
+  [data-theme="dark"] .section-title,
+  [data-theme="dark"] h3,
+  [data-theme="dark"] .contact-info h3 {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Simplify section title animation */
+  .section-title-3d {
+    animation: mobileTitle 4s infinite alternate;
+  }
+  
+  @keyframes mobileTitle {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.03);
+    }
   }
 }
