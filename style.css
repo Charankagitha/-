@@ -944,7 +944,7 @@ a {
   
   /* Navbar */
   .navbar {
-    padding: var(--space-sm) 0;
+    display:none;
   }
   
   .navbar-brand {
