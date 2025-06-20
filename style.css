@@ -986,7 +986,12 @@ a {
   .cursor {
     display: none;
   }
-  
+    .social-icon {
+    width: 36px;
+    height: 36px;
+    font-size: var(--font-size-sm);
+    display : flex;
+  }
   /* Simplify some animations */
   .section-title-3d {
     animation: mobileTitle 4s infinite alternate;
