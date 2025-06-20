@@ -943,16 +943,13 @@ a {
   }
   
   /* Navbar */
-  .navbar {
-    display:none;
-  }
   
   .navbar-brand {
     font-size: var(--font-size-md);
   }
   
   .navbar-collapse {
-    top: 60px;
+    top: 50px;
   }
   
   .nav-link {
